@@ -174,7 +174,7 @@ body, h1, h2, h3, p, ul, li {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
-    color: #FFF;
+    color: rgb(236, 27, 27);
     opacity: 0;
     transform: translateY(100%);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -208,4 +208,4 @@ body, h1, h2, h3, p, ul, li {
   .product .details .btn:hover {
     background-color: #555;
   }
-  
+
