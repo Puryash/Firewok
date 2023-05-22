@@ -1,0 +1,370 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: rgb(255, 254, 254);
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: rgb(255, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 700px;
+  }
+  
+  .logo img {
+    max-width: 250px;
+    height: auto;
+  }
+  
+
+
+/* Navigation Section */
+nav {
+    position: relative;
+    width:100%;
+  }
+  
+  
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  
+  nav ul li {
+    display: inline;
+    width: auto;
+    margin-left: 30px;
+    position: relative;
+  }
+  
+  nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 900;
+
+  }
+  
+  
+  .search-box{
+    display: flex;
+  }
+  
+  .search-box input[type="text"] {
+    padding: 5px 100px;
+    border-radius: 390px;
+    border: solid 0.5;
+    margin-right: 5px; /* Add some spacing between input and button */
+  }
+  
+  .search-box button[type="submit"] {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #333;
+    color: rgb(253, 249, 249);
+  }
+  
+
+
+/* Hero Section */
+#home {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    background: url("https://c8.alamy.com/comp/JGE2D3/fire-brigade-rescue-fire-prevention-accident-recovery-save-devices-JGE2D3.jpg") center center/cover no-repeat; /* Replace with your image path */
+    animation: imageLoop 30s infinite linear;
+  }
+  
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay */
+    padding: 40px;
+    border-radius: 5px;
+  }
+  
+  @keyframes imageLoop {
+    0% {
+      background-image: url("https://c8.alamy.com/comp/JGE2D3/fire-brigade-rescue-fire-prevention-accident-recovery-save-devices-JGE2D3.jpg"); /* Replace with your image path */
+    }
+    33% {
+      background-image: url("https://img.freepik.com/premium-photo/firefighter-support-first-aid-firefighter-man-lying-unconscious-choking-smoke-while-save-lives-people-from-fire-incident_34755-1447.jpg"); /* Replace with your image path */
+    }
+    66% {
+      background-image: url("https://thumbs.dreamstime.com/z/team-off-firefighters-trying-to-cut-open-car-door-save-person-involved-accident-186079785.jpg"); /* Replace with your image path */
+    }
+    100% {
+      background-image: url("https://c8.alamy.com/comp/JGE2D3/fire-brigade-rescue-fire-prevention-accident-recovery-save-devices-JGE2D3.jpg"); /* Replace with your image path */
+    }
+  }
+ .highlight-text {
+    color: #f80000;
+  }
+  #home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgb(9, 71, 241);
+  }
+  
+  #home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgb(4, 227, 235);
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(22, 22, 22);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #555;
+  }
+  
+  /* Fire Brigde Section */
+  #fire-brigade {
+    
+    background-color: #f3f3f3;
+  }
+  
+  .fire-brigade-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fire-brigade-image {
+    flex-basis: 50%;
+    text-align: center;
+  }
+  
+  .fire-brigade-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .fire-brigade-details {
+    flex-basis: 50%;
+    padding: 0 0px;
+  }
+  
+  .fire-brigade-details h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'open sans', sans-serif;
+  }
+  
+  .fire-brigade-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .fire-brigade-details li {
+    margin-bottom: 15px;
+    color: #949494;
+    font-family: 'lato', sans-serif;
+  }
+  #fire-brigade:hover .fire-brigade-image {
+    transform: scale(1.2);
+    transition-duration: 1s;
+  }
+
+
+
+
+/* Feature Seections*/
+  #featured-products {
+    text-align: center;
+  }
+  
+  .product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .product {
+    width: 350px;
+    background-color: rgb(163, 161, 161);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 200px;
+    border: solid 1px #333;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .product:hover img {
+    transform: scale(1.1);
+  }
+  
+  .product .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: #FFF;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .product:hover .details {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .product .details h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .product .details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .product .details .btn {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product .details .btn:hover {
+    background-color: rgb(68, 67, 67);
+  }
+  
+  @keyframes imagePop {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .product img {
+    animation: imagePop 1s ease;
+  }
+  
+  
+  /* Contact Section */
+  #contact {
+    background-color: #fff;
+    padding: 60px 0;
+  }
+  
+  #contact h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  #contact p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #777;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  textarea {
+    height: 120px;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgb(0, 0, 0);
+  }
+
