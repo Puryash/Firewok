@@ -1,10 +1,7 @@
-const images = document.querySelectorAll('.image-gallery img');
-let currentImageIndex = 0;
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
 
-function showNextImage() {
-  images[currentImageIndex].classList.remove('active');
-  currentImageIndex = (currentImageIndex + 1) % images.length;
-  images[currentImageIndex].classList.add('active');
-}
-
-setInterval(showNextImage, 2000);
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
